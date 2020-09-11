@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 1024px) {
   .hero-screen {
-    padding: 30px 156px;
+    padding: 30px 156px 100px;
   }
 
   .hero-screen .info {
