@@ -1,0 +1,84 @@
+.login-screen {
+  color: var(--text);
+  padding: 30px;
+}
+.login-screen form {
+  border: 3px solid var(--element);
+  max-width: 380px;
+  box-shadow: 0 -2px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.login-screen form .options-bar {
+  border-bottom: 2px solid var(--element);
+}
+
+.login-screen form.invalid input {
+  border: 2px solid hsl(0, 80%, 55%);
+}
+
+.login-screen form .options-bar button {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.login-screen form .options-bar button.active {
+  background-color: var(--element);
+}
+
+.login-screen form h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.login-screen h1 {
+  font-size: 46px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--element);
+  margin-bottom: 30px;
+}
+
+.login-screen form input {
+  border: 1px solid var(--element);
+  background-color: var(--element);
+  height: 50px;
+  width: 100%;
+  color: var(--text);
+  font-size: 18px;
+  outline: navajowhite;
+  text-indent: 20px;
+  border-radius: 6px;
+}
+
+.login-screen form > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.login-screen form > p.invalid-msg {
+  font-size: 14px;
+  color: hsl(0, 80%, 55%);
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.login-screen button {
+  background-color: var(--element);
+  padding: 10px 30px;
+  width: 125px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--text);
+  border-left: 2px solid var(--background);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .login-screen {
+    padding: 30px 156px;
+  }
+}

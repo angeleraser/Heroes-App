@@ -1,0 +1,94 @@
+.hero-screen {
+  padding: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  height: 100%;
+}
+
+.hero-screen button {
+  background-color: var(--element);
+  padding: 15px 30px;
+  width: 125px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--text);
+  align-self: flex-start;
+  border-left: 2px solid var(--background);
+  margin-bottom: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-screen img {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 300px;
+  height: 400px;
+  grid-area: HeroImage;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.6);
+  background-color: #ccc;
+}
+
+.hero-screen .info {
+  grid-template-columns: 300px;
+  place-content: center;
+  grid-template-areas:
+    "HeroImage"
+    "HeroName"
+    "HeroInfo";
+  padding: 30px 0 0;
+  color: var(--text);
+  row-gap: 15px;
+  max-width: 860px;
+  border-radius: 6px;
+}
+
+.hero-screen .info ul {
+  grid-area: HeroInfo;
+}
+
+.hero-screen .info ul li {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.hero-screen .info ul li:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.hero-screen .info ul span {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: none;
+}
+
+.hero-screen .info h2 {
+  font-size: 32px;
+  font-weight: 600;
+  grid-area: HeroName;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-screen {
+    padding: 30px 156px;
+  }
+
+  .hero-screen .info {
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "HeroImage HeroName"
+      "HeroImage HeroInfo";
+    row-gap: 40px;
+    column-gap: 80px;
+    padding: 40px 40px 0;
+  }
+
+  .hero-screen img {
+    place-self: flex-end;
+  }
+
+  .hero-screen .info h2 {
+    align-self: flex-end;
+    font-size: 42px;
+  }
+}

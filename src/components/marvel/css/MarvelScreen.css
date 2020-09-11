@@ -1,0 +1,21 @@
+.marvel-screen {
+  padding: 30px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.marvel-screen > h1{
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  color: var(--text);
+}
+
+@media screen and (min-width:1024px) {
+  .marvel-screen {
+    padding: 40px 156px;
+  }
+  .marvel-screen > h1{
+    font-size: 46px;
+  }
+}

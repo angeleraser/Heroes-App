@@ -1,0 +1,21 @@
+.hero-list {
+  grid-template-columns: 300px;
+  gap: 30px;
+  place-items: center;
+  padding-top: 30px;
+  place-content: center;
+}
+
+@media screen and ( min-width:768px) {
+  .hero-list {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media screen and ( min-width:1140px) {
+  .hero-list {
+    grid-template-columns: repeat(3, 300px);
+    gap: 60px;
+    justify-content: space-between;
+  }
+}
